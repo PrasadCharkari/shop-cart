@@ -1,0 +1,72 @@
+@media screen and (max-width: 820px) {
+  .cart {
+    grid-template-columns: 1fr;
+
+    overflow-x: hidden;
+  }
+
+  .Calc {
+    padding: 2px;
+  }
+
+  .Calc h2 {
+    font-size: large;
+
+    font-weight: 500;
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cartItem {
+    width: auto;
+    height: auto;
+  }
+
+  .cartItem img {
+    height: 100px;
+    object-fit: contain;
+  }
+
+  .cartItem button {
+    width: 20px;
+  }
+
+  .cartItem article {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .cartItem img {
+    width: 60px;
+    height: 120px;
+    object-fit: contain;
+  }
+  .cartItem article {
+    display: inline-block;
+    margin-left: 15px;
+    font-size: small;
+  }
+
+  .cartItem button {
+    width: 25px;
+  }
+
+  .DelIcon {
+    cursor: pointer;
+  }
+
+  .cart {
+    overflow-x: hidden;
+  }
+
+  .cart main{
+    width: 120%;
+    margin-left: -35px;
+  }
+}
