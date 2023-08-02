@@ -21,7 +21,7 @@ function Navbar() {
         <p style={{color:"white", fontSize:"20px"}}>{cartItems.length}</p>
     
 
-        {/* <button className='btn'>Log Out</button> */}
+       
         </div>
 
 
