@@ -1,13 +1,10 @@
 .main {
-  background-color: blanchedalmond;
   display: flex;
   justify-content: center;
   justify-items: center;
-  position: relative;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: auto;
-
 }
 
 .productCard {
@@ -19,7 +16,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .images {
@@ -52,24 +48,16 @@
   font-weight: 900;
 }
 
-
-@media screen and (max-width:820px) {
- 
+@media screen and (max-width: 820px) {
   .main {
     background-color: blanchedalmond;
     display: flex;
     justify-content: center;
     justify-items: center;
-   
-    
-  
   }
-  
+
   .productCard {
     background-color: white;
     width: 224px;
-  
   }
-
-
 }

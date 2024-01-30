@@ -3,9 +3,6 @@ import "./Home.css";
 import { useDispatch } from "react-redux";
 import { toast } from "react-hot-toast";
 
-
-
-
 function Home() {
   const productList = [
     {
@@ -42,7 +39,7 @@ function Home() {
     toast.success("Added To Cart");
   };
   return (
-    <div className="main">
+    <main className="main">
       {productList.map((i) => (
         <ProductCard
           key={i.id}
@@ -53,12 +50,12 @@ function Home() {
           handler={addToCartHandler}
         />
       ))}
-    </div>
+    </main>
   );
 }
 
 const ProductCard = ({ name, id, price, handler, imgsrc }) => (
-  <div className="productCard">
+  <section className="productCard">
     <img className="images" src={imgsrc} alt={name} />
     <p className="productname">{name}</p>
     <h3 className="Price">₹{price}</h3>
@@ -68,7 +65,7 @@ const ProductCard = ({ name, id, price, handler, imgsrc }) => (
     >
       Add to Cart
     </button>
-  </div>
+  </section>
 );
 
 export default Home;

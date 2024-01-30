@@ -1,92 +1,66 @@
-
-
 .cart {
- 
   overflow-x: hidden;
- 
- 
+  /* overflow-y: hidden; */
 }
 
-.main {
-  padding: 2rem;
-  overflow-y: auto;
-}
-
-.h2 {
+.Calc {
+  border-radius: 100px 0 0 100px;
   color: black;
-  font: 100 2rem ;
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.182);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
 }
 
-.Calc{
-border-radius: 100px 0 0 100px;
-color: black;
-box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.182);
-display: flex;
-justify-content: center;
-text-align: center;
-flex-direction: column;
-padding-top: 10px;
-padding-bottom: 10px;
-background-color: white;
-
-
-
-
+.Calc h2 {
+  font-size: x-large;
+  letter-spacing: 2px;
+  padding: 8px;
+  font-weight: 500;
 }
 
-.Calc h2{
-    font-size:x-large ;
-    letter-spacing: 2px;
-    padding: 8px;
-    font-weight: 500;
-    
-   
-}
-
-.Calc h2:last-of-type{
-    padding-top: 20px;
-    font-weight: 900;
+.Calc h2:last-of-type {
+  padding-top: 20px;
+  font-weight: 900;
 }
 
 .cartItem {
-
-  
   border-radius: 20px;
   margin: 3rem 3rem;
   padding: 1rem;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
   background-color: white;
 }
 
-
-.cartItem img{
+.cartItem img {
   width: 100%;
   height: 200px;
   object-fit: contain;
 }
 
-.cartItem div{
+.cartItem div {
   display: flex;
- 
 }
 
-.cartItem button{
+.cartItem button {
   width: 30px;
-  margin-left:10px ;
-  margin-right:10px ;
+  margin-left: 10px;
+  margin-right: 10px;
   cursor: pointer;
   background-color: blanchedalmond;
   border-radius: 8px;
-  
- 
 }
 
-.DelIcon{
+.DelIcon {
   cursor: pointer;
 }
 
-.DelIcon:hover{
+.DelIcon:hover {
   color: rgb(161, 3, 3);
 }
